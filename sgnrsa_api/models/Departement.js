@@ -1,7 +1,7 @@
 
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../utils/sequerize');
-const Employeur = require('./Employeur');
+
 /**
 * fonction model pour la creation de la table  Departement
 * @author Philippe <hphilip@inoviatech.com>
@@ -20,14 +20,11 @@ const Departement= sequelize.define("departement", {
      type:DataTypes.STRING(50),
      allowNull:false
     },
-    DESCRIPTION:{
-        type: DataTypes.STRING(250),
+    DESIGNATION_DEP:{
+        type: DataTypes.STRING(100),
         allowNull: false
     },
-    ID_EMPLOYEUR:{
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
+  
     DATE_INSERTION:{
         type: DataTypes.DATE,
         allowNull: false,
@@ -38,5 +35,5 @@ const Departement= sequelize.define("departement", {
     tableName: 'departement',
     timestamps: false
 })
-Departement.belongsTo(Employeur,{foreignKey:"ID_EMPLOYEUR",as:"employeur"});
+
 module.exports = Departement

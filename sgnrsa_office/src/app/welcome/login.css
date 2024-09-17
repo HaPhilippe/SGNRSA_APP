@@ -1,0 +1,58 @@
+/* body {
+}
+.psr-collage  {
+          min-height: 100vh;
+}
+.wasili-logo {
+          position: absolute;
+          top: 15px;
+}
+.logo_container {
+          width: 70px;
+          height: 70px;
+}
+.logo_container img {
+          width: 100%;
+          height: 100%;
+} */
+
+
+
+/* .psr-collage  {
+    min-height: 100vh;
+}
+.wasili-logo {
+    margin-bottom: 50px;
+}
+.logo_container {
+    width: 60px;
+    height: 60px;
+}
+.logo_container img {
+    width: 100%;
+    height: 100%;
+} */
+/* @media screen and (max-width: 1000px) {
+    .psr-collage  {
+              display: none !important;
+    }
+    .form_left {
+              position: absolute !important;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 75% !important;
+    }
+} */
+/* @media screen and (max-width: 500px) {
+    .form_left {
+              width: 95% !important;
+    }
+    .form_left_container {
+              width: 90% !important;
+    }
+} */
+body{
+    background-color: #2C3E50;
+}
+

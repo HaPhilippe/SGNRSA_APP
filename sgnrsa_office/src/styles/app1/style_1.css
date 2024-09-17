@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/* font-family:'Raleway',sans-serif;*/
+/* 1er */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2 */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: #2c3E50; */
+}
+
+/* Enlever toutes les text-decolation sur a ou hover */
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+/* commençons le disign header */
+.header {
+    background: #3498DB;
+    height: 70px;
+    line-height: 70px;
+    /* center verticalement*/
+}
+
+.logo {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    float: left;
+}
+
+.menu {
+    /* on veut que  les liens soient placés à gauche  */
+    float: right;
+}
+
+.menu a {
+    color: #ffffff;
+    margin-right: 20px;
+    /* si on veut l' espacement entre les liens*/
+}
+
+.menu a:hover {
+    color: #2c3E50;
+}
+
+/*  En suite le banniere*/
+.banner {
+    /* c'est la classe de bootstrap */
+    width: 100%;
+    max-width: 100%;
+    height: 70%;
+    line-height: 70%;
+}
+
+.ban {
+    background: #2c3E50;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.ban img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.separateur {
+    height: 7%;
+    width: 80%;
+    border: none;
+    box-shadow: none;
+    background-color: #000000;
+}
+
+.inner-banner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-banner h1 {
+    color: #ffffff;
+    text-shadow: 1px 1px 30px #000000;
+}
+
+.inner-banner .btn-custom {
+    background-color: #230353;
+    color: #fff;
+}
+
+.btn-custom {
+    background-color: #230353;
+    color: #fff;
+    /* float: right; */
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #cec6d8;
+    color: #046e3a;
+}
+
+.inner-banner .btn-custom:hover {
+    background-color: #530311;
+
+}
+
+/* En suite le About */
+
+#about {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.about article {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.about article h2 {
+    text-align: center;
+}
+
+/* En suite le portforlio */
+.portfolio {
+    background-color: #eeeeee;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+.portfolio .item-folio {
+    margin: 30px;
+    height: 280px;
+    background-color: #3498DB;
+    display: inline-block;
+}
+
+/* Et enfi on va disigner le footer qui est le contact */
+.footer {
+    background-color: #3d5771;
+    height: 650px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#contact {
+    color: #ffffff;
+    text-align: center;
+}
+
+.formulaireContact {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    height: 50px;
+    width: 500px;
+    border: none;
+}
+
+input[type=email] {
+    height: 50px;
+    width: 500px;
+    border: none;
+    resize: horizontal;
+}
+
+textarea {
+    height: 200px;
+    width: 500px;
+    resize: vertical;
+    padding: 20px 15px;
+}
+
+.controls .btn-custom {
+    background-color: #230353;
+    color: #fff;
+    float: right;
+    border: none;
+}
+
+.controls .btn-custom:hover {
+    background-color: #127fb9;
+    color: #ef0707;
+
+}

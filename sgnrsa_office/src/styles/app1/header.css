@@ -1,0 +1,93 @@
+
+ header {
+    background-color: #fff;
+    background-color: #2C3E50;
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.breadCrumbItem {
+    transition: ease-in-out 250ms;
+    color: #f4f4f9 !important;
+}
+
+.breadCrumbItem:hover,
+.breadCrumbItem.active {
+    background-color: #E67E22;
+    color: #FFFFFF !important;
+}
+
+.appMobileAside {
+    width: auto !important;
+}
+
+.appMobileAside .p-sidebar-header {
+    display: none;
+}
+
+.appMobileAside .p-sidebar-content {
+    padding: 0;
+}
+
+/* #mobileSidebarOpener {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #mobileSidebarOpener {
+              display: block;
+    }
+} */
+
+#mobileSidebarOpener {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #mobileSidebarOpener {
+              display: block;
+    }
+}
+
+.searchbar-container {
+    background: #ececec;
+    padding: 8px 20px;
+    min-width: 200px;
+    max-width: 450px;
+    width: 60%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #807a7a;
+    cursor: text;
+    transition: 300ms ease-in-out;
+}
+.searchbar-container:hover {
+    background: #cacaca;
+}
+.searchbar-container .p-button-label {
+    margin-left: 10px;
+    font-weight: 400 !important;
+}
+.searchbar-container .search-command {
+    font-size: 13px;
+}
+@media screen and (max-width: 1200px) {
+    #breadcrumb {
+              display: none !important;
+    }
+}
+

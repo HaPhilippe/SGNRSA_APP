@@ -1,0 +1,162 @@
+
+body {
+    overflow-y: hidden !important
+}
+.logo-container {
+    width: 35px;
+    height: 35px;
+    /* background-color: #fff; */
+    background-color: #b94a4a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 300ms opacity;
+}
+aside.minimized .logo-container {
+    opacity: 0;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.app-brandName {
+    color: #ffd529;
+    opacity: 1;
+    transition: 300ms opacity;
+}
+aside.minimized .app-brandName {
+    opacity: 0;
+}
+.brandSubName {
+    color: #bebebe;
+    opacity: 1;
+    transition: 300ms opacity;
+}
+aside.minimized .brandSubName {
+    opacity: 0;
+}
+
+aside {
+    /* background-color: #fff; */
+    background-color: #b38989;
+    /* min-width: 300px; */
+    /* max-width: 300px; */
+    width: 300px;
+    height: 100vh;
+    /* background-image: url("/images/wasilibackground-03.jpg"); */
+    background-position: top;
+    background-size: 100% 100%;
+    display: flex;
+    transition: 300ms width;
+    background-repeat: no-repeat;
+}
+aside.minimized {
+    width: 75px;
+}
+nav {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+nav {
+    scrollbar-width: auto;
+    scrollbar-color: #f3f3f3;
+}
+nav::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar-track {
+    /* background: #592333; */
+    background-color: #b38989;
+    padding: 1px;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+}
+.nav-item a .menu-title {
+    font-weight: 400;
+    opacity: 1;
+    transition: 300ms opacity;
+    white-space: nowrap;
+}
+
+aside.minimized .nav-item a .menu-title{
+    opacity: 0;
+}
+.nav-item a {
+    color: #3d3d3d;
+    transition: ease-in-out 300ms;
+}
+.nav-item a .down_caret {
+    transition: transform ease-in-out 300ms;
+}
+.nav-item a[aria-expanded="true"] .down_caret {
+    transform: rotate(90deg);
+}
+.nav-item a:hover {
+    background-color: #e9ecef;
+    color: #000 !important;
+}
+.nav-item.active a {
+    background-color: #e8f0fe;
+    color: #000 !important;
+}
+.menu-icon {
+    width: 35px;
+}
+
+hr {
+    background-color: red;
+}
+.button-close{
+display: none;
+}
+.d-sidebar{
+display: none;
+}
+@media screen and (max-width: 1200px) {
+    #desktop-sidebar {
+              display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

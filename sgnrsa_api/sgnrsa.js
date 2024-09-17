@@ -16,7 +16,8 @@ dotenv.config({ path: path.join(__dirname, "./.env") });
 const { Server } = require("socket.io");
 // const authRouter = require("./routes/auth/authRouter");
 const administrationRouter = require("./routes/administration/administartionRouter");
-const ressouresHumainesRouter = require("./routes/ressources_humaines/ressouresHumainesRouter");
+
+const rapports_StageRouter = require("./routes/Rapports_Stage/rapports_StageRouter");
 
 
 // const systemRouter = require("./routes/system/systemRouter")
@@ -33,7 +34,7 @@ app.use('/administration', administrationRouter);
 // app.use('/system', systemRouter)
 // Ressources humaines
 
-app.use('/rh', ressouresHumainesRouter);
+app.use('/rapport_Stage', rapports_StageRouter);
 app.all("*", (req, res) => {
           res.status(RESPONSE_CODES.NOT_FOUND).json({
                     statusCode: RESPONSE_CODES.NOT_FOUND,

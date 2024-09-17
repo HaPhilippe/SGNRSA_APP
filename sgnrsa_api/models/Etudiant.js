@@ -1,8 +1,8 @@
 
-const { Sequelize, DataTypes } = require('sequelize');
+const { Sequelize, DataTypes, STRING } = require('sequelize');
 const sequelize = require('../utils/sequerize');
 const Departement = require('./Departement');
-const Personne = require('./Personne');
+
 
 /**
 * fonction model pour la creation de la table  etudiant
@@ -18,13 +18,46 @@ const Etudiant = sequelize.define("etudiant", {
         primaryKey: true,
         autoIncrement: true
     },
-    ID_PERS:{
-        type: DataTypes.INTEGER,
+    NOM: {
+        type: DataTypes.STRING(50),
         allowNull: false,
+    },
+    PRENOM: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    EMAIL: {
+        type: DataTypes.STRING(100),
+        allowNull: false,
+        unique: true
     },
     ID_DEPARTEMENT: {
         type: DataTypes.INTEGER,
         allowNull: false,
+    },
+    NUMERO_CARTE: {
+        type: DataTypes.STRING(30),
+        allowNull: false
+    },
+    GENRE:{
+        type:DataTypes.STRING(10),
+        allowNull:false
+    },
+    PROFIL:{
+        type:STRING(100),
+        allowNull:true
+    },
+    PROVINCE:{
+        type:STRING(100),
+        allowNull:true
+    },
+    COMMUNE:{
+        type:STRING(100),
+        allowNull:true
+    },
+    ZONE:{
+        type:STRING(100),
+        allowNull:true
     },
     DATE_INSERTION: {
         type: DataTypes.DATE,
@@ -36,6 +69,6 @@ const Etudiant = sequelize.define("etudiant", {
     tableName: 'etudiant',
     timestamps: false
 })
-Etudiant.belongsTo(Personne,{foreignKey:"ID_PERS",as:"personne"});
-Etudiant.belongsTo(Departement,{foreignKey:"ID_DEPARTEMENT",as:"departement"});
+
+Etudiant.belongsTo(Departement, { foreignKey: "ID_DEPARTEMENT", as: "departement" });
 module.exports = Etudiant

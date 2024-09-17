@@ -1,7 +1,7 @@
 
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../utils/sequerize');
-const Personne = require('./Personne');
+
 
 /**
 * fonction model pour la creation de la table  Employeur
@@ -47,5 +47,5 @@ const Employeur= sequelize.define("employeur", {
     timestamps: false
 })
 
-Employeur.belongsTo(Personne, { foreignKey: "ID_PERS", as: 'personne' })
+
 module.exports = Employeur

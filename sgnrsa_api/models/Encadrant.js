@@ -1,7 +1,7 @@
 
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../utils/sequerize');
-const Personne = require('./Personne');
+
 const Entreprise = require('./Entreprise');
 /**
 * fonction model pour la creation de la table  Encadrant
@@ -17,9 +17,18 @@ const Encadrant = sequelize.define("encadrant", {
         primaryKey: true,
         autoIncrement: true
     },
-    ID_PERS: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+    NOM: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    PRENOM: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+    },
+    EMAIL: {
+        type: DataTypes.STRING(100),
+        allowNull: false,
+        unique: true
     },
     TITRE: {
         type: DataTypes.STRING(50),
@@ -40,6 +49,6 @@ const Encadrant = sequelize.define("encadrant", {
     timestamps: false
 })
 
-Encadrant.belongsTo(Personne,{ foreignKey: "ID_PERS", as: 'personne' })
+
 Encadrant.belongsTo(Entreprise,{ foreignKey: "ID_ENTREPRISE", as: 'entreprise' })
 module.exports = Encadrant

@@ -1,0 +1,19 @@
+.content-wrapper{
+  display: flex;
+}
+.main-content{
+  /* className="main w-100" style={{ maxWidth: "calc(100% - 300px)"}} */
+  width: 100%!important;
+  max-width: calc(100% - 300px)
+}
+@media(max-width: 767px){
+  .content-wrapper{
+      display: block;
+  }
+  .main-content{
+      width: 100% !important;
+     max-width: calc(100% - 5px)
+
+  }
+}
+

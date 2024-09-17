@@ -1,0 +1,252 @@
+
+body {
+    background-color: #eff3f8 !important;
+    overflow-y: hidden;
+    /* background-image: url("/images/logo_cedina1.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: 100% 95%; */
+}
+
+.main {
+    width: 1%;
+}
+.main.minimized {
+    max-width: calc(100% - 70px) !important;
+}
+.sidebar-date {
+    transition: opacity 300ms;
+}
+aside.minimized .sidebar-date {
+    opacity: 0;
+}
+.main_content {
+    min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.main_content.has_footer {
+    min-height: calc(100vh - 125px);
+    height: calc(100vh - 125px);
+    padding-bottom: 50px !important;
+}
+.main_content .shadow.rounded  {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.no-p .p-dropdown-label {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.p-datatable-wrapper {
+    border-radius: var(--bs-border-radius) !important;
+}
+
+.modal-loading-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-loading-content {
+    height: 50px;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #f3f3f3;
+}
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f3f3f3;
+    padding: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+}
+.highcharts-credits {
+    display: none;
+}
+.progress_spinner {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+    color: #fff;
+}
+@media (max-width: 767px) {
+}
+
+.dark-theme{
+background-color: #110D25 !important;
+color: #fff;
+}
+.light-theme{
+background-color: #eff3f8 !important;
+color: black;
+}
+
+
+.scrollable-content{
+    overflow: auto;
+    height: calc(100vh - 156px)
+}
+.content-element:hover{
+background-color: #c2c1c7;
+border-radius: 5px;
+transition:  0.2s ease-in;
+
+}
+.dashboard-title {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    #request_rides_overview {
+              width: 100% !important;
+    }
+    .main_content  {
+              padding-left: 0.5rem !important;
+              padding-right: 0.5rem !important;
+    }
+    #canceledRides-types {
+              padding: 0 !important;
+    }
+    header.px-4 {
+              padding-left: 0.2rem !important;
+              padding-right: 0.2rem !important;
+    }
+    .dashboard-title {
+              font-size: 1rem;
+    }
+    .p-frozen-column {
+              position: static !important;
+    }
+    .tab-message{
+              width: 100% !important;
+    }
+    /* .input-search{
+              width: 50vw;
+    } */
+    .chat-area{
+      width: 100%;
+    }
+}
+label {
+    font-size: var(--bs-body-font-size) !important;
+}
+.dashboad-main_counter {
+    overflow: hidden;
+    position: relative;
+}
+.dashboad-main_counter::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: -43px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+#dashboard-completed-trips::before {
+    background-image: url("/images/icons_wasili-01.png");
+}
+#dashboard-commission-totale::before {
+    background-image: url("/images/icons_wasili-02.png");
+}
+#dashboard-revenue-totale::before {
+    background-image: url("/images/icons_wasili-03.png");
+}
+#online-drivers::before {
+    background-image: url("/images/icons_wasili-04.png");
+}
+.conversations-tabs .p-tabview .p-tabview-nav {
+    border: none;
+}
+.fullscreen-chat-input {
+    border: none;
+}
+.fullscreen-chat-input:enabled:focus {
+    border: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 750px) {
+    .main_content.has_footer form {
+              width: 100% !important;
+    }
+    .main_content.has_footer form .w-75 {
+              width: 100% !important;
+    }
+    .main_content.has_footer form .form-group.mt-5,
+     .main_content.has_footer form .form-group .row .col-md-4.mt-5 {
+              margin-top: 0rem !important;
+    }
+    .main_content.has_footer form .form-group .row .col-sm.mt-5 {
+              margin-top: 5px !important;
+    }
+    .main_content.has_footer form .form-group.mt-5 .row .col-sm {
+              margin-top: 5px !important;
+    }
+    .p-dialog.p-component.p-dialog-default {
+              width: 95vw !important;
+    }
+}
+.p-slidemenu-rootlist.p-active-submenu {
+    max-width: 100%;
+}
+.p-button.p-component {
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 900px) {
+    #aside-dashboard-skeleton {
+              display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .conversations-tabs {
+              width: 40vw !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .tab-message.chat-opened .conversations-tabs {
+              display: none !important;
+    }
+    .tab-message .conversations-tabs {
+              width: 100% !important;
+              max-width: 100% !important;
+    }
+    .empty_conversation_feedback {
+              display: none !important;
+    }
+    .conversation__header {
+              padding-right: 0 !important;
+              padding-left: 0 !important;
+    }
+    .conversation-footer {
+              bottom: auto !important;
+    }
+}
