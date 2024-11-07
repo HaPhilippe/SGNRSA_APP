@@ -12,7 +12,6 @@ const RESPONSE_STATUS = require("./constants/RESPONSE_STATUS");
 const app = express();
 const bindUser = require("./middleware/bindUser");
 dotenv.config({ path: path.join(__dirname, "./.env") });
-
 const { Server } = require("socket.io");
 // const authRouter = require("./routes/auth/authRouter");
 const administrationRouter = require("./routes/administration/administartionRouter");

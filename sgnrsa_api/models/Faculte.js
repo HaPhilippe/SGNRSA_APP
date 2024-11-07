@@ -12,10 +12,8 @@ const sequelize = require('../utils/sequerize');
 const Faculte = sequelize.define("faculte", {
     ID_FAC: {
         type: DataTypes.INTEGER,
-        allowNull: false,
         primaryKey: true,
         autoIncrement: true
-    },
   
     NOM: {
         type: DataTypes.STRING(100),
@@ -31,7 +29,6 @@ const Faculte = sequelize.define("faculte", {
         defaultValue: DataTypes.NOW
     }
 }, {
-    freezeTableName: true,
     tableName: 'faculte',
     timestamps: false
 })

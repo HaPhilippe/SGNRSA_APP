@@ -43,32 +43,14 @@ const Etudiant = sequelize.define("etudiant", {
         type:DataTypes.STRING(10),
         allowNull:false
     },
-    PROFIL:{
-        type:STRING(100),
-        allowNull:true
-    },
-    PROVINCE:{
-        type:STRING(100),
-        allowNull:true
-    },
-    COMMUNE:{
-        type:STRING(100),
-        allowNull:true
-    },
-    ZONE:{
-        type:STRING(100),
-        allowNull:true
-    },
     DATE_INSERTION: {
         type: DataTypes.DATE,
         allowNull: true,
         defaultValue: DataTypes.NOW
     }
 }, {
-    freezeTableName: true,
     tableName: 'etudiant',
     timestamps: false
 })
 
-Etudiant.belongsTo(Departement, { foreignKey: "ID_DEPARTEMENT", as: "departement" });
 module.exports = Etudiant
